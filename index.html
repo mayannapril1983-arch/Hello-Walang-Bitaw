@@ -107,7 +107,7 @@ opacity:0;
 <p>Try tapping it!</p>
 <img id="meme">
 <div id="message">
-💜 Happy International Women's Month Breadge😜 💜
+💜 Happy International Women's Day Breadge😜 💜
 </div>
 </div>
 
@@ -124,12 +124,12 @@ let maxEscapes = 6;
 
 /* meme images for each escape */
 let memes = [
-"https://i.imgflip.com/30b1gx.jpg",  // Drake
-"https://i.imgflip.com/1ur9b0.jpg",  // Distracted boyfriend
-"https://i.imgflip.com/345v97.jpg",  // Woman yelling at cat
-"https://i.imgflip.com/2wifvo.jpg",  // Stonks
-"https://i.imgflip.com/4acd7j.png",  // Gigachad
-"https://i.imgflip.com/1bij.jpg"     // Trollface
+"https://i.imgflip.com/30b1gx.jpg",
+"https://i.imgflip.com/1ur9b0.jpg",
+"https://i.imgflip.com/345v97.jpg",
+"https://i.imgflip.com/2wifvo.jpg",
+"https://i.imgflip.com/4acd7j.png",
+"https://i.imgflip.com/1bij.jpg"
 ];
 
 btn.style.left="50%";
@@ -165,7 +165,7 @@ btn.addEventListener("mouseover", moveButton);
 btn.addEventListener("click", function(){
 if(escapes >= maxEscapes){
 btn.style.display="none";
-meme.style.display="none"; // hide the meme
+meme.style.display="none";
 message.style.display="block";
 
 /* Celebration effects */
@@ -175,7 +175,7 @@ celebrate();
 
 /* Celebration: floating hearts + confetti */
 function celebrate(){
-/* floating hearts */
+
 let heartInterval = setInterval(()=>{
 let heart = document.createElement("div");
 heart.className="heart";
